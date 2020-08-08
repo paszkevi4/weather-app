@@ -1,0 +1,59 @@
+$main-height: 60vh
+    
+.form
+    width: $main-height
+
+form
+    height: $main-height / 5
+    width: $main-height / 2
+    margin: auto
+    padding: auto
+    position: relative
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+input[type="text"]
+    font-size: large
+    width: 100%
+    background-color: transparent
+    border: 0
+    border-bottom: 1px solid #007fff
+    height: $main-height / 15
+    &:focus
+        outline: none
+        border-bottom: 2px solid #007fff
+
+button
+    font-size: large
+    background-color: transparent
+    border: 0
+    position: absolute
+    right: 0
+    &:focus
+        outline: none
+
+.currentWether
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+.showMore
+    font-weight: normal
+    cursor: pointer
+
+.moreInfo
+    div
+        display: grid
+        grid-template-columns: 1fr 1fr
+        span:nth-child(1n)
+            text-align: right
+        span:nth-child(2n)
+            text-align: left
+            padding-left: 5px
+    p
+        margin: 5px 0
+        font-weight: bold 
